@@ -13,7 +13,7 @@ export default function () {
       <div className='flex justify-center items-center h-screen'>
         <Heading
           size='9'
-          className='text-5xl font-bold bg-gradient-to-r from-red-500 to-purple-600 bg-clip-text text-transparent'
+          className='text-5xl font-bold bg-gradient-to-r from-red-500 to-purple-600 bg-clip-text text-transparent cursor-pointer transition duration-300 hover:text-yellow-600'
           onClick={() => router.push("/GetStarted")}
         >
           ¡Hola! Comencemos...
