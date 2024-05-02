@@ -5,5 +5,6 @@ export async function middleware(request, _next) {
     const country = request.geo?.country ?? "";
     console.log(country)
     console.log(request.geo.latitude);
+    console.log(request.geo.longitude);
     return res;
 }
