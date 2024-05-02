@@ -1,5 +1,5 @@
 'use client';
-import { Tabs, Box, Text, Heading } from '@radix-ui/themes';
+import { Tabs, Box, Heading } from '@radix-ui/themes';
 
 import {
     Slide,

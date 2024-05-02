@@ -15,8 +15,11 @@ export async function GET() {
             }
         );
     } catch (err) {
-
-
+        return NextResponse.json({
+            err
+        }, {
+            status: 500
+        })
     }
 }
 export async function POST(request) {
@@ -33,6 +36,7 @@ export async function POST(request) {
             }
         )
     } catch (err) {
+        console.log(err);
         return NextResponse.json({
             err
         }, {
