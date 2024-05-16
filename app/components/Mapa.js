@@ -142,8 +142,7 @@ export default function MapWithSearch() {
                                         <Avatar
                                             size="3"
                                             src={session.user.image}
-                                            radius="full"
-                                            fallback="T"
+                                            radius="full"                            
                                         />
                                     </Link>
                                     <Box>
