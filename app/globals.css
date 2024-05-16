@@ -31,3 +31,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.buscador {
+
+  position: absolute !important;
+  z-index: 1;
+  margin: 7px auto;
+  width: 50%;
+  margin-top: 10px;
+  @media (max-width:768px) {
+      width: 40%;
+  }
+}
+
+.elemento {
+  position: absolute !important;
+  z-index: 1;
+  @media (max-width:768px) {
+      width: 40%;
+  }
+}
+
+
+.sideBar{
+  position: absolute !important;
+  z-index: 2;
+  @media (max-width:768px) {
+      width: 40%;
+  }
+}
