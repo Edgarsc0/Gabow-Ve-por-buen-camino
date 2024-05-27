@@ -4,10 +4,11 @@ import { Heading, Box, Flex, Avatar, Button, Link, Text, Separator } from '@radi
 import { Zoom } from 'react-awesome-reveal';
 import { signIn, signOut, useSession } from "next-auth/react";
 
-export default function ({ params }) {
+export default function () {
     const { data: session } = useSession();
-    return <>
+    return <div className="bg-gradient-to-r from-black to-gray-800 h-screen">
         <Zoom>
+
             <div className='fixed top-0 left-0 right-0'>
                 <div className='flex justify-start'>
                     <div className='elemento'>
@@ -78,17 +79,17 @@ export default function ({ params }) {
                         </Text>
                     </div>
                 </div>
-                <Separator size="4" my="5" />
+                <Separator size="4" my="1" />
             </Box>
         </div>
 
 
-        <footer className="fixed bottom-0 w-full bg-black">
+        <footer className="fixed bottom-0 w-full bg-gradient-to-r from-black to-gray-800">
             <Zoom>
                 <div className="container flex flex-col items-center justify-between p-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
                     <p className="text-sm text-gray-600 dark:text-gray-300">Gabow: Developed by QuEx</p>
 
-                    <p className="text-sm text-gray-600 dark:text-gray-300">© Copyright 2021. All Rights Reserved.</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">© Copyright 2024. All Rights Reserved.</p>
 
                     <div className="flex -mx-2">
                         <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
@@ -116,6 +117,6 @@ export default function ({ params }) {
                 </div>
             </Zoom>
         </footer>
-    </>
+    </div>
 
 }

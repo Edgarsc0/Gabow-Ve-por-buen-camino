@@ -3,7 +3,7 @@ import {
     Box
 } from "@radix-ui/themes"
 import { useRouter } from "next/navigation"
-import { Roll } from "react-awesome-reveal";
+
 
 export default function () {
     const router = useRouter();
